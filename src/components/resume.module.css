@@ -1,0 +1,39 @@
+.resume { background: red; }
+
+.employment-job {
+  margin-bottom: 4em;
+  padding-left: 3em;
+  border-left: 4px solid #dab3b0;
+}
+
+.job-company {
+  display: inline-block;
+}
+
+.job-company a {
+  color: #66192e;
+  text-decoration: none;
+}
+
+.job-location,
+.job-duration {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.job-location,
+.job-duration {
+  font-size: 0.8em;
+  color: #dab3b0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.job-title {
+  font-family: "Alice";
+  font-size: 2.25em;
+  color: #66192e;
+  margin: 0 0 0.35em 0;
+}
+
