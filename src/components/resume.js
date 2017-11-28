@@ -5,15 +5,100 @@ class Resume extends React.Component {
     render() {
         return (
             <div className={styles.resume}>
-                <p>Elyse works as a Design System Engineer at Indeed. There, she works with a small team creating components and a front-end culture code. She writes a lot of CSS for scale, puts emoji in her bash prompt, and encourages writing friendly documentation. She lives in sunny downtown Austin, TX with her husband.</p>
-                
-                {/* <p>To balance the computer hours, Elyse spends her mornings doing squats and deadlifts, and her evenings cooking elaborate weeknight meals and reading. She lives in sunny (and sweaty) downtown Austin, TX with her husband.</p> */}
+                <div className={styles.employment}>
 
-                {/* <p>She has spent her ten-year career writing and refactoring CSS/Sass, with a focus on Sass architecture and systems. Previously, she worked at RetailMeNot on a design system called Roux, and at Square Root and Bazaarvoice on Sass architectures for their enterprise apps.</p> */}
+                    <div className={styles.employmentjob}>
+                        <div className={styles.jobmeta}>
+                            <div className={styles.jobtitle}>
+                                Design System Engineer,
+                                <div className={styles.jobcompany}>
+                                    <a href="http://indeed.com/about">Indeed</a>
+                                </div>
+                            </div>
+                            <div className={styles.joblocation}>
+                                Austin, TX
+                            </div>
+                            <div className={styles.jobduration}>
+                                July 2017—Present
+                            </div>
+                        </div>
 
-                {/* <p>Elyse is an experienced conference speaker and teacher: she’s taught Girl Develop It classes and led MakerSquare’s part-time front end course; in 2014 she keynoted Front End Design Conf with her “I Have No Idea What I’m Doing” talk and co-led a Sass Refactoring workshop with Jina. In 2016 she was on the organizing team for SassConf, where she was responsible for speaker selection and mentoring.</p> */}
+                        <div className={styles.jobdescription}>
+                            <p>
+                                Front end development and CSS architecture for Indeed's Design System, enabling Engineers to quickly create pages and components while following a consistent design.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, neque libero illum veritatis quisquam dignissimos molestias eius, in minus ex et ratione quod ducimus aspernatur magni fuga ullam.
+                            </p>
+                        </div>
 
-                {/* <p>She has a Communication and Design B.S. from Rensselaer Polytechnic (the joke is that spelling it is the graduation exam), dabbles in design and typography, and is on the journey of learning JavaScript.</p> */}
+                    </div>
+
+
+                    <div className={styles.employmentjob}>
+                        <div className={styles.jobmeta}>
+                            <div className={styles.jobtitle}>
+                                Senior UI Engineer,
+                                <div className={styles.jobcompany}>
+                                    <a href="http://retailmenot.com/corp">RetailMeNot</a>
+                                </div>
+                            </div>
+                            <div className={styles.joblocation}>
+                                Austin, TX
+                            </div>
+                            <div className={styles.jobduration}>
+                                November 2014—July 2017
+                            </div>
+                        </div>
+
+                        <div className={styles.jobdescription}>
+                            <p>
+                                Front end development and leadership of the Roux ecosystem, a design systems toolset that enables RMN’s UI Engineers to quickly create pages and components while following a consistent design. Led the effort to open source Roux, feature roadmap, and planning.
+                                In 2016, contributed 41% of all code committed to the front end pattern library.
+                            </p>
+                            <p>
+                                Over the past two years, created new components for the pattern library while simultaneously redesigning retailmenot.com; worked with teams on successful A/B tests of the store page, a new “stackable” offer concept, and more. Support Designers and engineers
+                                from all teams to improve their HTML, CSS and Sass skills, and using the Roux ecosystem.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className={styles.employmentjob}>
+                    <div className={styles.jobmeta}>
+                        <div className={styles.jobtitle}>
+                            Developer/Designer, Instructor
+                            <div className={styles.jobcompany}>
+                                <a href="http://makersquare.com">MakerSquare (HackReactor)</a>
+                            </div>
+                        </div>
+                        <div className={styles.joblocation}>
+                            Austin, TX
+                        </div>
+                        <div className={styles.jobduration}>
+                            April 2014—Nov 2014
+                        </div>
+                    </div>
+                </div>
+
+                    <div className={styles.employmentjob}>
+                    <div className={styles.jobmeta}>
+                        <div className={styles.jobtitle}>
+                            FrontEnd Developer
+                            <div className={styles.jobcompany}>
+                                <a href="http://square-root.com">Square Root, Inc.</a>
+                            </div>
+                        </div>
+                        <div className={styles.joblocation}>
+                            Austin, TX
+                        </div>
+                        <div className={styles.jobduration}>
+                            May 2012—April 2014
+                        </div>
+                    </div>
+                </div>
+
             </div>
         )
     }

@@ -1,28 +1,26 @@
-.resume { background: red; }
-
-.employment-job {
+.employmentjob {
   margin-bottom: 4em;
   padding-left: 3em;
   border-left: 4px solid #dab3b0;
 }
 
-.job-company {
+.jobcompany {
   display: inline-block;
 }
 
-.job-company a {
+.jobcompany a {
   color: #66192e;
   text-decoration: none;
 }
 
-.job-location,
-.job-duration {
+.joblocation,
+.jobduration {
   display: inline-block;
   margin-right: 1em;
 }
 
-.job-location,
-.job-duration {
+.joblocation,
+.jobduration {
   font-size: 0.8em;
   color: #dab3b0;
   letter-spacing: 1px;
@@ -30,7 +28,7 @@
   margin: 0;
 }
 
-.job-title {
+.jobtitle {
   font-family: "Alice";
   font-size: 2.25em;
   color: #66192e;

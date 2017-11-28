@@ -8,16 +8,22 @@ path: "/theory/"
 Design Systems are our current model of making sense of the intersection of front-end code and design. With the tools we have today, what is our working model of a component? How do we define them, create them, and ensure they work at scale? In this talk we’ll discuss how our tools affect our understanding, create a checklist of factors that make a component a component, and how to implement the theory of components with the tools you have at hand.
 
 
-<div class="slides">
-    <img src="assets/slides-1.jpg">
-    <img src="assets/slides-2.jpg">
-    <img src="assets/slides-3.jpg">
-    <img src="assets/slides-4.jpg">
-    <img src="assets/slides-5.jpg">
-    <img src="assets/slides-6.jpg">
-    <img src="assets/slides-7.jpg">
-    <img src="assets/slides-8.jpg">
-</div>
+
+<p><img src="assets/slides-1.jpg"></p>
+
+<p><img src="assets/slides-2.jpg"></p>
+
+<p><img src="assets/slides-3.jpg"></p>
+
+<p><img src="assets/slides-4.jpg"></p>
+
+<p><img src="assets/slides-5.jpg"></p>
+
+<p><img src="assets/slides-6.jpg"></p>
+
+<p><img src="assets/slides-7.jpg"></p>
+
+<p><img src="assets/slides-8.jpg"></p>
 
 ## Overview
 

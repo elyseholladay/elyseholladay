@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Alice');
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
+
+a,
+a:active,
+a:visited {
+  color: #66192e;
+  text-decoration: none;
+  transition: 250ms ease-out color;
+}
+
+a:hover,
+a:focus {
+  color: #dab3b0;
+  text-decoration: none;
+}
+
+
 p {
   font-size: 1em;
   line-height: 1.65;
@@ -8,12 +24,21 @@ p {
   font-weight: 200;
 }
 
+
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   color: #66192e;
   font-family: "Alice";
-  margin: 0;
+  margin: 0 0 .5em 0;
 }
+
+.sitetitle {
+  font-family: "Rubik";
+  font-size: 4em;
+}
+
+.sitetitle a, .sitetitle a:active, .sitetitle a:visited { color: #8dacc8; }
+.sitetitle a:focus, .sitetitle a:hover { color: #dab3b0; }
 
 h2 {
   font-family: "Alice";
@@ -56,21 +81,6 @@ section {
   padding: 2em 2em 4em 2em;
 }
 
-
-a,
-a:active,
-a:visited {
-  color: #66192e;
-  text-decoration: none;
-  transition: 250ms ease-out color;
-}
-
-a:hover,
-a:focus {
-  color: #dab3b0;
-  text-decoration: none;
-}
-
 ol, ul {}
 
 li {
@@ -78,5 +88,16 @@ li {
 }
 
 .post {
-  
+  margin-bottom: 4em;
+  padding-left: 3em;
+  border-left: 4px solid #dab3b0;
+}
+
+.postmeta {
+  font-size: 0.8em;
+  color: #8dacc8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: .25em 0 .5em 0;
+
 }

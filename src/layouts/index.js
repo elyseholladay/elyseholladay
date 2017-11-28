@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Container from "../components/container";
+import styles from "./index.module.css"
 
 class Template extends React.Component {
   render() {
@@ -8,7 +9,7 @@ class Template extends React.Component {
     let header
     if (location.pathname === '/') {
       header = (
-        <h1>
+        <h1 className={styles.sitetitle}>
           <Link to={'/'} >
             Elyse Holladay
           </Link>

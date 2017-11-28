@@ -7,6 +7,7 @@ import styles from "./index.module.css";
 
 import Container from "../components/container";
 import Resume from "../components/resume";
+import Bio from "../components/bio";
 
 
 class BlogIndex extends React.Component {
@@ -18,25 +19,30 @@ class BlogIndex extends React.Component {
       <div>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
 
-        <Resume/>
+        <p>💖 🦊 👑  scss magic & front-end tools. married with @cherewaty. feminist. baby powerlifter, avid reader, hobbyist cook, capsule wardrobe nerd, bullet journaler.</p>
 
         <h2>Conference Talks</h2>
         {posts.map(post => {
           if (post.node.path !== '/404/') {
             const title = get(post, 'node.frontmatter.title') || post.node.path
             return (
-              <div key={post.node.frontmatter.path}>
+              <div className={styles.post} key={post.node.frontmatter.path}>
                 <h3>
                   <Link to={post.node.frontmatter.path} >
                     {post.node.frontmatter.title}
                   </Link>
                 </h3>
-                <small>{post.node.frontmatter.date}</small>
-                <p className={styles.post} dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+                <small className={styles.postmeta}>
+                  {post.node.frontmatter.date} at {post.node.frontmatter.conf}
+                </small>
+                <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
               </div>
             )
           }
         })}
+
+        <h2>About Elyse</h2>
+        <Bio/>
     </div>
     )
   }
@@ -62,6 +68,7 @@ export const pageQuery = graphql`
           frontmatter {
             path
             date(formatString: "DD MMMM, YYYY")
+            conf
           }
           frontmatter {
             title
