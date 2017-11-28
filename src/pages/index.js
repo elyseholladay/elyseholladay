@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import styles from "./index.module.css"
+import styles from "./index.module.css";
 
 import Container from "../components/container";
 import Resume from "../components/resume";
@@ -18,10 +18,9 @@ class BlogIndex extends React.Component {
       <div>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
 
-        <p className="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum consequuntur quia sapiente cupiditate commodi ut dolorem nemo, quaerat iure eos maxime, facilis vitae quam, excepturi rem nam incidunt ex.</p>
-
         <Resume/>
 
+        <h2>Conference Talks</h2>
         {posts.map(post => {
           if (post.node.path !== '/404/') {
             const title = get(post, 'node.frontmatter.title') || post.node.path
@@ -33,7 +32,7 @@ class BlogIndex extends React.Component {
                   </Link>
                 </h3>
                 <small>{post.node.frontmatter.date}</small>
-                <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+                <p className={styles.post} dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
               </div>
             )
           }

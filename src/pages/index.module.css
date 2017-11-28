@@ -9,7 +9,7 @@ p {
 }
 
 h1 {
-  font-size: 5.063em;
+  font-size: 4em;
   color: #66192e;
   font-family: "Alice";
   margin: 0;
@@ -19,14 +19,14 @@ h2 {
   font-family: "Alice";
   font-size: 2.25em;
   color: #66192e;
-  margin: 0 0 0.35em 0;
+  margin: 1em 0 0.35em 0;
 }
 
 h3 {
   font-family: "Alice";
   font-size: 1.5em;
   color: #A36543;
-  margin: 0 0 1.25em 0;
+  margin: 1.25em 0 .5em 0;
 }
 
 h5 {
@@ -69,4 +69,14 @@ a:hover,
 a:focus {
   color: #dab3b0;
   text-decoration: none;
+}
+
+ol, ul {}
+
+li {
+  line-height: 2;
+}
+
+.post {
+  
 }

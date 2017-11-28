@@ -1,0 +1,15 @@
+.post {}
+.postmeta {
+  font-size: 0.8em;
+  color: #8dacc8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 3em 0 2em 0;
+}
+
+.postmetaitem {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.postcontent {}
