@@ -1,0 +1,30 @@
+{
+    "data": {
+        "allSitePage": {
+            "totalCount": 4,
+            "edges": [
+                {
+                    "node": {
+                        "path": "/theory/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/tigers"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/resume/"
+                    }
+                }
+            ]
+        }
+    },
+    "pathContext": {}
+}
