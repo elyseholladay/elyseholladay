@@ -1,111 +1,66 @@
-<!DOCTYPE html>
- <html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><title data-react-helmet="true">A Working Theory of Components | elyse holladay</title><style id="gatsby-inlined-css">@import url(https://fonts.googleapis.com/css?family=Alice);@import url(https://fonts.googleapis.com/css?family=Rubik);.src-templates----blog-module---postmeta---15YYt{font-size:.8em;color:#8dacc8;letter-spacing:1px;text-transform:uppercase;margin:3em 0 2em}.src-templates----blog-module---postmetaitem---2YaYK{display:inline-block;margin-right:1em}a,a:active,a:visited{color:#66192e;text-decoration:none;transition:color .25s ease-out}a:focus,a:hover{color:#dab3b0;text-decoration:none}p{font-size:1em;line-height:1.65;font-style:normal;font-weight:200}h1{font-size:3em;color:#66192e;font-family:Alice;margin:0 0 .5em}.src-pages----index-module---sitetitle---1Lqs6{font-family:Rubik;font-size:4em}.src-pages----index-module---sitetitle---1Lqs6 a,.src-pages----index-module---sitetitle---1Lqs6 a:active,.src-pages----index-module---sitetitle---1Lqs6 a:visited{color:#8dacc8}.src-pages----index-module---sitetitle---1Lqs6 a:focus,.src-pages----index-module---sitetitle---1Lqs6 a:hover{color:#dab3b0}h2{font-size:2.25em;color:#66192e;margin:1em 0 .35em}h2,h3{font-family:Alice}h3{font-size:1.5em;color:#a36543;margin:1.25em 0 .5em}h5{color:#8dacc8;margin:0 0 2em 3em}h5,h6{font-size:.8em;letter-spacing:1px;text-transform:uppercase}h6{color:#dab3b0}body,h6{margin:0}body{background:#e8e3e0;font-family:Rubik;font-size:100%}section{padding:2em 2em 4em}li{line-height:2}.src-pages----index-module---post---x3wjP{margin-bottom:4em;padding-left:3em;border-left:4px solid #dab3b0}.src-pages----index-module---postmeta---2XGSq{font-size:.8em;color:#8dacc8;letter-spacing:1px;text-transform:uppercase;margin:.25em 0 .5em}.src-components----container-module---container---3C57J{width:75%;max-width:800px;margin:0 auto;margin-top:2em}.src-components----resume-module---employmentjob---1pZfC{margin-bottom:4em;padding-left:3em;border-left:4px solid #dab3b0}.src-components----resume-module---jobcompany---UTMME{display:inline-block}.src-components----resume-module---jobcompany---UTMME a{color:#66192e;text-decoration:none}.src-components----resume-module---jobduration---3r_Cb,.src-components----resume-module---joblocation---FLuXz{display:inline-block;margin-right:1em;font-size:.8em;color:#dab3b0;letter-spacing:1px;text-transform:uppercase;margin:0}.src-components----resume-module---jobtitle---2pIXJ{font-family:Alice;font-size:2.25em;color:#66192e;margin:0 0 .35em}.src-components----bio-module---bio---2twll{margin-bottom:4em;padding-left:3em;border-left:4px solid #dab3b0}.src-layouts----index-module---sitetitle---1KdNi{font-family:Rubik;font-size:4em}.src-layouts----index-module---sitetitle---1KdNi a,.src-layouts----index-module---sitetitle---1KdNi a:active,.src-layouts----index-module---sitetitle---1KdNi a:visited{color:#8dacc8}.src-layouts----index-module---sitetitle---1KdNi a:focus,.src-layouts----index-module---sitetitle---1KdNi a:hover{color:#dab3b0}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="1685102224"><div class="src-components----container-module---container---3C57J" data-reactid="2"><h3 data-reactid="3"><a href="/" data-reactid="4">Elyse Holladay</a></h3><div class="src-templates----blog-module---post---yA269" data-reactid="5"><!-- react-empty: 6 --><h1 data-reactid="7">A Working Theory of Components</h1><p class="src-templates----blog-module---postmeta---15YYt" data-reactid="8"><span class="src-templates----blog-module---postmetaitem---2YaYK" data-reactid="9">November 27, 2017</span><span class="src-templates----blog-module---postmetaitem---2YaYK" data-reactid="10">ClarityConf</span></p><div class="src-templates----blog-module---postcontent---3HF4K" data-reactid="11"><p>Design Systems are our current model of making sense of the intersection of front-end code and design. With the tools we have today, what is our working model of a component? How do we define them, create them, and ensure they work at scale? In this talk we’ll discuss how our tools affect our understanding, create a checklist of factors that make a component a component, and how to implement the theory of components with the tools you have at hand.</p>
-<p>
-  <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;">
-    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/2gAMAwEAAhADEAAAAdBE0B//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAEFAl//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAXEAEAAwAAAAAAAAAAAAAAAAABABEg/9oACAEBAAE/IQjWf//aAAwDAQACAAMAAAAQ99//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABETEAIHH/2gAIAQEAAT8QBtjAKZea/wD/2Q==&apos;); background-size: cover; display: block;">
-      <img class="gatsby-resp-image-image" style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;" alt="slides 1" title="" src="https://elyseholladay.github.io/static/slides-1-5905f32ca8f8feb89f98a4ec53ba287f-ca545.jpg" srcset="https://elyseholladay.github.io/static/slides-1-5905f32ca8f8feb89f98a4ec53ba287f-aa1b7.jpg 148w,
-https://elyseholladay.github.io/static/slides-1-5905f32ca8f8feb89f98a4ec53ba287f-b937a.jpg 295w,
-https://elyseholladay.github.io/static/slides-1-5905f32ca8f8feb89f98a4ec53ba287f-ca545.jpg 590w,
-https://elyseholladay.github.io/static/slides-1-5905f32ca8f8feb89f98a4ec53ba287f-75639.jpg 885w,
-https://elyseholladay.github.io/static/slides-1-5905f32ca8f8feb89f98a4ec53ba287f-8bd51.jpg 1180w,
-https://elyseholladay.github.io/static/slides-1-5905f32ca8f8feb89f98a4ec53ba287f-a3716.jpg 1770w,
-https://elyseholladay.github.io/static/slides-1-5905f32ca8f8feb89f98a4ec53ba287f-6b37f.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
-    </span>
-  </span>
-  </p>
-<p>
-  <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;">
-    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAEDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB4rk1Kg//xAAWEAEBAQAAAAAAAAAAAAAAAAASACD/2gAIAQEAAQUCMc//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAWEAEBAQAAAAAAAAAAAAAAAAAxACD/2gAIAQEABj8CZz//xAAZEAEAAgMAAAAAAAAAAAAAAAABABEgUaH/2gAIAQEAAT8hAg1ldeY//9oADAMBAAIAAwAAABD0/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAdEAEAAQMFAAAAAAAAAAAAAAABABEgITFBYaHR/9oACAEBAAE/EGoCmlTHcFpv8+o4bP/Z&apos;); background-size: cover; display: block;">
-      <img class="gatsby-resp-image-image" style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;" alt="slides 2" title="" src="https://elyseholladay.github.io/static/slides-2-f042992f13ebcb9720c605f1db134c33-ca545.jpg" srcset="https://elyseholladay.github.io/static/slides-2-f042992f13ebcb9720c605f1db134c33-aa1b7.jpg 148w,
-https://elyseholladay.github.io/static/slides-2-f042992f13ebcb9720c605f1db134c33-b937a.jpg 295w,
-https://elyseholladay.github.io/static/slides-2-f042992f13ebcb9720c605f1db134c33-ca545.jpg 590w,
-https://elyseholladay.github.io/static/slides-2-f042992f13ebcb9720c605f1db134c33-75639.jpg 885w,
-https://elyseholladay.github.io/static/slides-2-f042992f13ebcb9720c605f1db134c33-8bd51.jpg 1180w,
-https://elyseholladay.github.io/static/slides-2-f042992f13ebcb9720c605f1db134c33-a3716.jpg 1770w,
-https://elyseholladay.github.io/static/slides-2-f042992f13ebcb9720c605f1db134c33-6b37f.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
-    </span>
-  </span>
-  </p>
-<p>
-  <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;">
-    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAActcHqMQf//EABgQAQADAQAAAAAAAAAAAAAAAAECESAh/9oACAEBAAEFAiBTxx//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAVEAEBAAAAAAAAAAAAAAAAAAAgMf/aAAgBAQAGPwKr/8QAGhABAAIDAQAAAAAAAAAAAAAAAQARICExQf/aAAgBAQABPyFAXqA0NxK9w//aAAwDAQACAAMAAAAQJz//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEBAAIDAAAAAAAAAAAAAAABEQAgQWHR/9oACAEBAAE/EGUCLI+ZNiTkuApD2af/2Q==&apos;); background-size: cover; display: block;">
-      <img class="gatsby-resp-image-image" style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;" alt="slides 3" title="" src="https://elyseholladay.github.io/static/slides-3-e3bdd53471acd0f20af98bd62a03d603-ca545.jpg" srcset="https://elyseholladay.github.io/static/slides-3-e3bdd53471acd0f20af98bd62a03d603-aa1b7.jpg 148w,
-https://elyseholladay.github.io/static/slides-3-e3bdd53471acd0f20af98bd62a03d603-b937a.jpg 295w,
-https://elyseholladay.github.io/static/slides-3-e3bdd53471acd0f20af98bd62a03d603-ca545.jpg 590w,
-https://elyseholladay.github.io/static/slides-3-e3bdd53471acd0f20af98bd62a03d603-75639.jpg 885w,
-https://elyseholladay.github.io/static/slides-3-e3bdd53471acd0f20af98bd62a03d603-8bd51.jpg 1180w,
-https://elyseholladay.github.io/static/slides-3-e3bdd53471acd0f20af98bd62a03d603-a3716.jpg 1770w,
-https://elyseholladay.github.io/static/slides-3-e3bdd53471acd0f20af98bd62a03d603-6b37f.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
-    </span>
-  </span>
-  </p>
-<p>
-  <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;">
-    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHaVmgf/8QAFhAAAwAAAAAAAAAAAAAAAAAAABEg/9oACAEBAAEFAhz/AP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABoQAAICAwAAAAAAAAAAAAAAAAEQABEhMVH/2gAIAQEAAT8hzKDZdDi//9oADAMBAAIAAwAAABCjD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAQADAAMAAAAAAAAAAAAAAAEAESEQcYH/2gAIAQEAAT8QW2EcmnUNOFm0PkACgon/2Q==&apos;); background-size: cover; display: block;">
-      <img class="gatsby-resp-image-image" style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;" alt="slides 4" title="" src="https://elyseholladay.github.io/static/slides-4-fa71f86f01147943b722c8d151b8d2f8-ca545.jpg" srcset="https://elyseholladay.github.io/static/slides-4-fa71f86f01147943b722c8d151b8d2f8-aa1b7.jpg 148w,
-https://elyseholladay.github.io/static/slides-4-fa71f86f01147943b722c8d151b8d2f8-b937a.jpg 295w,
-https://elyseholladay.github.io/static/slides-4-fa71f86f01147943b722c8d151b8d2f8-ca545.jpg 590w,
-https://elyseholladay.github.io/static/slides-4-fa71f86f01147943b722c8d151b8d2f8-75639.jpg 885w,
-https://elyseholladay.github.io/static/slides-4-fa71f86f01147943b722c8d151b8d2f8-8bd51.jpg 1180w,
-https://elyseholladay.github.io/static/slides-4-fa71f86f01147943b722c8d151b8d2f8-a3716.jpg 1770w,
-https://elyseholladay.github.io/static/slides-4-fa71f86f01147943b722c8d151b8d2f8-6b37f.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
-    </span>
-  </span>
-  </p>
-<p>
-  <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;">
-    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHblZoH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAFhABAQEAAAAAAAAAAAAAAAAAAQAg/9oACAEBAAE/IYc//9oADAMBAAIAAwAAABBzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAAICAwAAAAAAAAAAAAAAAAERADEgIVH/2gAIAQEAAT8QJQpwhbFc3j//2Q==&apos;); background-size: cover; display: block;">
-      <img class="gatsby-resp-image-image" style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;" alt="slides 5" title="" src="https://elyseholladay.github.io/static/slides-5-cf7a88c37527f9264de0e3f90b459dff-ca545.jpg" srcset="https://elyseholladay.github.io/static/slides-5-cf7a88c37527f9264de0e3f90b459dff-aa1b7.jpg 148w,
-https://elyseholladay.github.io/static/slides-5-cf7a88c37527f9264de0e3f90b459dff-b937a.jpg 295w,
-https://elyseholladay.github.io/static/slides-5-cf7a88c37527f9264de0e3f90b459dff-ca545.jpg 590w,
-https://elyseholladay.github.io/static/slides-5-cf7a88c37527f9264de0e3f90b459dff-75639.jpg 885w,
-https://elyseholladay.github.io/static/slides-5-cf7a88c37527f9264de0e3f90b459dff-8bd51.jpg 1180w,
-https://elyseholladay.github.io/static/slides-5-cf7a88c37527f9264de0e3f90b459dff-a3716.jpg 1770w,
-https://elyseholladay.github.io/static/slides-5-cf7a88c37527f9264de0e3f90b459dff-6b37f.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
-    </span>
-  </span>
-  </p>
-<p>
-  <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;">
-    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHaVmgf/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAFxAAAwEAAAAAAAAAAAAAAAAAABEgQf/aAAgBAQABPyHRz//aAAwDAQACAAMAAAAQ88//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAACAwEAAAAAAAAAAAAAAAABEQAgIUH/2gAIAQEAAT8QZxyBika//9k=&apos;); background-size: cover; display: block;">
-      <img class="gatsby-resp-image-image" style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;" alt="slides 6" title="" src="https://elyseholladay.github.io/static/slides-6-828979407cab73cf8aa64494c2d72a2d-ca545.jpg" srcset="https://elyseholladay.github.io/static/slides-6-828979407cab73cf8aa64494c2d72a2d-aa1b7.jpg 148w,
-https://elyseholladay.github.io/static/slides-6-828979407cab73cf8aa64494c2d72a2d-b937a.jpg 295w,
-https://elyseholladay.github.io/static/slides-6-828979407cab73cf8aa64494c2d72a2d-ca545.jpg 590w,
-https://elyseholladay.github.io/static/slides-6-828979407cab73cf8aa64494c2d72a2d-75639.jpg 885w,
-https://elyseholladay.github.io/static/slides-6-828979407cab73cf8aa64494c2d72a2d-8bd51.jpg 1180w,
-https://elyseholladay.github.io/static/slides-6-828979407cab73cf8aa64494c2d72a2d-a3716.jpg 1770w,
-https://elyseholladay.github.io/static/slides-6-828979407cab73cf8aa64494c2d72a2d-6b37f.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
-    </span>
-  </span>
-  </p>
-<p>
-  <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;">
-    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAEDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABxTU1AP/EABgQAAIDAAAAAAAAAAAAAAAAAAECERIg/9oACAEBAAEFAgsiuf/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABYQAQEBAAAAAAAAAAAAAAAAADEAIP/aAAgBAQAGPwJnP//EABkQAQACAwAAAAAAAAAAAAAAAAEAESAxkf/aAAgBAQABPyELKkRWvTH/2gAMAwEAAgADAAAAELf/AP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAQACAwAAAAAAAAAAAAAAAAEAUSDR4f/aAAgBAQABPxAokUpuCSK10x//2Q==&apos;); background-size: cover; display: block;">
-      <img class="gatsby-resp-image-image" style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;" alt="slides 7" title="" src="https://elyseholladay.github.io/static/slides-7-8e7554efa84126f4503bc29dee65283c-ca545.jpg" srcset="https://elyseholladay.github.io/static/slides-7-8e7554efa84126f4503bc29dee65283c-aa1b7.jpg 148w,
-https://elyseholladay.github.io/static/slides-7-8e7554efa84126f4503bc29dee65283c-b937a.jpg 295w,
-https://elyseholladay.github.io/static/slides-7-8e7554efa84126f4503bc29dee65283c-ca545.jpg 590w,
-https://elyseholladay.github.io/static/slides-7-8e7554efa84126f4503bc29dee65283c-75639.jpg 885w,
-https://elyseholladay.github.io/static/slides-7-8e7554efa84126f4503bc29dee65283c-8bd51.jpg 1180w,
-https://elyseholladay.github.io/static/slides-7-8e7554efa84126f4503bc29dee65283c-a3716.jpg 1770w,
-https://elyseholladay.github.io/static/slides-7-8e7554efa84126f4503bc29dee65283c-6b37f.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
-    </span>
-  </span>
-  </p>
-<p>
-  <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;">
-    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHPRqAf/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAFxABAAMAAAAAAAAAAAAAAAAAAQAgYf/aAAgBAQABPyEibX//2gAMAwEAAgADAAAAEP8A/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAACAwEAAAAAAAAAAAAAAAABEQAgcUH/2gAIAQEAAT8QB9A2IDQ5X//Z&apos;); background-size: cover; display: block;">
-      <img class="gatsby-resp-image-image" style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;" alt="slides 8" title="" src="https://elyseholladay.github.io/static/slides-8-1fca811c95f3e6ef56f60a116c95cf96-ca545.jpg" srcset="https://elyseholladay.github.io/static/slides-8-1fca811c95f3e6ef56f60a116c95cf96-aa1b7.jpg 148w,
-https://elyseholladay.github.io/static/slides-8-1fca811c95f3e6ef56f60a116c95cf96-b937a.jpg 295w,
-https://elyseholladay.github.io/static/slides-8-1fca811c95f3e6ef56f60a116c95cf96-ca545.jpg 590w,
-https://elyseholladay.github.io/static/slides-8-1fca811c95f3e6ef56f60a116c95cf96-75639.jpg 885w,
-https://elyseholladay.github.io/static/slides-8-1fca811c95f3e6ef56f60a116c95cf96-8bd51.jpg 1180w,
-https://elyseholladay.github.io/static/slides-8-1fca811c95f3e6ef56f60a116c95cf96-a3716.jpg 1770w,
-https://elyseholladay.github.io/static/slides-8-1fca811c95f3e6ef56f60a116c95cf96-6b37f.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
-    </span>
-  </span>
-  </p>
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/component---src-templates-blog-post-js.e980b206ec6d087ac599.css">.blog-module--post--yA269{width:75%;max-width:800px;margin:2em auto 0}.blog-module--postmeta--15YYt{font-size:.8em;color:#8dacc8;letter-spacing:1px;text-transform:uppercase;margin:3em 0 2em}.blog-module--postmetaitem--2YaYK{display:inline-block;margin-right:1em}</style><meta name="generator" content="Gatsby 2.0.91"/><title data-react-helmet="true">A Working Theory of Components | elyse holladay</title><link as="script" rel="preload" href="/component---src-templates-blog-post-js-7c810189854656ca8529.js"/><link as="script" rel="preload" href="/0-61bb5a8e2630fdbdf7c5.js"/><link as="script" rel="preload" href="/app-0118e6200d75c2f028fc.js"/><link as="script" rel="preload" href="/webpack-runtime-e8d5f408c8f22c874ed9.js"/><link as="fetch" rel="preload" href="/static/d/412/path---theory-bc-6-08f-hPiCSvPwAEmM4HYJbhASs3GJflk.json" crossOrigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="blog-module--post--yA269"><h1>A Working Theory of Components</h1><p class="blog-module--postmeta--15YYt"><span class="blog-module--postmetaitem--2YaYK">November 27, 2017</span><span class="blog-module--postmetaitem--2YaYK">ClarityConf</span></p><div class="blog-module--postcontent--3HF4K"><p>Design Systems are our current model of making sense of the intersection of front-end code and design. With the tools we have today, what is our working model of a component? How do we define them, create them, and ensure they work at scale? In this talk we’ll discuss how our tools affect our understanding, create a checklist of factors that make a component a component, and how to implement the theory of components with the tools you have at hand.</p>
+<p><span class="gatsby-resp-image-wrapper" style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/2gAMAwEAAhADEAAAAdBE0B//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAEFAl//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAXEAEAAwAAAAAAAAAAAAAAAAABABEg/9oACAEBAAE/IQjWf//aAAwDAQACAAMAAAAQ99//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAYEAEAAwEAAAAAAAAAAAAAAAABABExIP/aAAgBAQABPxAHWoBirz//2Q==&apos;); background-size: cover; display: block;"></span>
+    <img class="gatsby-resp-image-image" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;" alt="slides 1" title="" src="/static/5905f32ca8f8feb89f98a4ec53ba287f/ca545/slides-1.jpg" srcset="/static/5905f32ca8f8feb89f98a4ec53ba287f/aa1b7/slides-1.jpg 148w,
+/static/5905f32ca8f8feb89f98a4ec53ba287f/b937a/slides-1.jpg 295w,
+/static/5905f32ca8f8feb89f98a4ec53ba287f/ca545/slides-1.jpg 590w,
+/static/5905f32ca8f8feb89f98a4ec53ba287f/75639/slides-1.jpg 885w,
+/static/5905f32ca8f8feb89f98a4ec53ba287f/8bd51/slides-1.jpg 1180w,
+/static/5905f32ca8f8feb89f98a4ec53ba287f/a3716/slides-1.jpg 1770w,
+/static/5905f32ca8f8feb89f98a4ec53ba287f/6b37f/slides-1.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
+  </span></p>
+<p><span class="gatsby-resp-image-wrapper" style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAEDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABxTW1AP/EABgQAAIDAAAAAAAAAAAAAAAAAAABERIg/9oACAEBAAEFAoRVZ//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABcQAAMBAAAAAAAAAAAAAAAAAAAgMTL/2gAIAQEABj8Cppf/xAAYEAEAAwEAAAAAAAAAAAAAAAABABEgYf/aAAgBAQABPyEYGpODP//aAAwDAQACAAMAAAAQhD//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAdEAEAAQMFAAAAAAAAAAAAAAABABEgQSExcaHR/9oACAEBAAE/EHI5w007gyZ+PY72f//Z&apos;); background-size: cover; display: block;"></span>
+    <img class="gatsby-resp-image-image" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;" alt="slides 2" title="" src="/static/f042992f13ebcb9720c605f1db134c33/ca545/slides-2.jpg" srcset="/static/f042992f13ebcb9720c605f1db134c33/aa1b7/slides-2.jpg 148w,
+/static/f042992f13ebcb9720c605f1db134c33/b937a/slides-2.jpg 295w,
+/static/f042992f13ebcb9720c605f1db134c33/ca545/slides-2.jpg 590w,
+/static/f042992f13ebcb9720c605f1db134c33/75639/slides-2.jpg 885w,
+/static/f042992f13ebcb9720c605f1db134c33/8bd51/slides-2.jpg 1180w,
+/static/f042992f13ebcb9720c605f1db134c33/a3716/slides-2.jpg 1770w,
+/static/f042992f13ebcb9720c605f1db134c33/6b37f/slides-2.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
+  </span></p>
+<p><span class="gatsby-resp-image-wrapper" style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB2oszQP/EABYQAAMAAAAAAAAAAAAAAAAAAAARIP/aAAgBAQABBQIc/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAZEAABBQAAAAAAAAAAAAAAAAABABEgITH/2gAIAQEAAT8htMGmP//aAAwDAQACAAMAAAAQ48//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAwADAAAAAAAAAAAAAAABABEhEEGR/9oACAEBAAE/EFtgVHMFwbLOEHo8gUZk/9k=&apos;); background-size: cover; display: block;"></span>
+    <img class="gatsby-resp-image-image" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;" alt="slides 4" title="" src="/static/fa71f86f01147943b722c8d151b8d2f8/ca545/slides-4.jpg" srcset="/static/fa71f86f01147943b722c8d151b8d2f8/aa1b7/slides-4.jpg 148w,
+/static/fa71f86f01147943b722c8d151b8d2f8/b937a/slides-4.jpg 295w,
+/static/fa71f86f01147943b722c8d151b8d2f8/ca545/slides-4.jpg 590w,
+/static/fa71f86f01147943b722c8d151b8d2f8/75639/slides-4.jpg 885w,
+/static/fa71f86f01147943b722c8d151b8d2f8/8bd51/slides-4.jpg 1180w,
+/static/fa71f86f01147943b722c8d151b8d2f8/a3716/slides-4.jpg 1770w,
+/static/fa71f86f01147943b722c8d151b8d2f8/6b37f/slides-4.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
+  </span></p>
+<p><span class="gatsby-resp-image-wrapper" style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHblZoH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAFhABAQEAAAAAAAAAAAAAAAAAAQAg/9oACAEBAAE/IYc//9oADAMBAAIAAwAAABBzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAQEAAwEAAAAAAAAAAAAAAAERACAxUf/aAAgBAQABPxBYcuI2nPNf/9k=&apos;); background-size: cover; display: block;"></span>
+    <img class="gatsby-resp-image-image" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;" alt="slides 5" title="" src="/static/cf7a88c37527f9264de0e3f90b459dff/ca545/slides-5.jpg" srcset="/static/cf7a88c37527f9264de0e3f90b459dff/aa1b7/slides-5.jpg 148w,
+/static/cf7a88c37527f9264de0e3f90b459dff/b937a/slides-5.jpg 295w,
+/static/cf7a88c37527f9264de0e3f90b459dff/ca545/slides-5.jpg 590w,
+/static/cf7a88c37527f9264de0e3f90b459dff/75639/slides-5.jpg 885w,
+/static/cf7a88c37527f9264de0e3f90b459dff/8bd51/slides-5.jpg 1180w,
+/static/cf7a88c37527f9264de0e3f90b459dff/a3716/slides-5.jpg 1770w,
+/static/cf7a88c37527f9264de0e3f90b459dff/6b37f/slides-5.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
+  </span></p>
+<p><span class="gatsby-resp-image-wrapper" style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHapmgf/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGBAAAgMAAAAAAAAAAAAAAAAAABEgQWH/2gAIAQEAAT8hseR//9oADAMBAAIAAwAAABCzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAAIDAQAAAAAAAAAAAAAAAAEhABEgQf/aAAgBAQABPxBryArZDP8A/9k=&apos;); background-size: cover; display: block;"></span>
+    <img class="gatsby-resp-image-image" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;" alt="slides 6" title="" src="/static/828979407cab73cf8aa64494c2d72a2d/ca545/slides-6.jpg" srcset="/static/828979407cab73cf8aa64494c2d72a2d/aa1b7/slides-6.jpg 148w,
+/static/828979407cab73cf8aa64494c2d72a2d/b937a/slides-6.jpg 295w,
+/static/828979407cab73cf8aa64494c2d72a2d/ca545/slides-6.jpg 590w,
+/static/828979407cab73cf8aa64494c2d72a2d/75639/slides-6.jpg 885w,
+/static/828979407cab73cf8aa64494c2d72a2d/8bd51/slides-6.jpg 1180w,
+/static/828979407cab73cf8aa64494c2d72a2d/a3716/slides-6.jpg 1770w,
+/static/828979407cab73cf8aa64494c2d72a2d/6b37f/slides-6.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
+  </span></p>
+<p><span class="gatsby-resp-image-wrapper" style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHPGpAf/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGBAAAgMAAAAAAAAAAAAAAAAAAAERIGH/2gAIAQEAAT8hRG1//9oADAMBAAIAAwAAABDP/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABAHEgITH/2gAIAQEAAT8QA9QuIDQax//Z&apos;); background-size: cover; display: block;"></span>
+    <img class="gatsby-resp-image-image" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;" alt="slides 8" title="" src="/static/1fca811c95f3e6ef56f60a116c95cf96/ca545/slides-8.jpg" srcset="/static/1fca811c95f3e6ef56f60a116c95cf96/aa1b7/slides-8.jpg 148w,
+/static/1fca811c95f3e6ef56f60a116c95cf96/b937a/slides-8.jpg 295w,
+/static/1fca811c95f3e6ef56f60a116c95cf96/ca545/slides-8.jpg 590w,
+/static/1fca811c95f3e6ef56f60a116c95cf96/75639/slides-8.jpg 885w,
+/static/1fca811c95f3e6ef56f60a116c95cf96/8bd51/slides-8.jpg 1180w,
+/static/1fca811c95f3e6ef56f60a116c95cf96/a3716/slides-8.jpg 1770w,
+/static/1fca811c95f3e6ef56f60a116c95cf96/6b37f/slides-8.jpg 4000w" sizes="(max-width: 590px) 100vw, 590px">
+  </span></p>
 <h2>Overview</h2>
-<p>Over the past 15 years, our understanding of the world of front end development has changed. We have been iterating constantly on our working theory of how to design and code for the web.</p>
+<p>Over the years, our understanding of the world of front end development has changed. We have been iterating constantly on our working theory of how to design and code for the web.</p>
 <p>We’ve used the tools we have not just to create solutions to the problems we face, but also to create new tools. These tools aren’t just helping us do our job; they are <em>changing</em> the way we can even <em>conceptualize</em> our work. We’re building on what we learned previously, filling in the gaps and unknowns. We are coming to a new understanding, with these new tools, of how to create the front end at scale: Design Systems.</p>
 <p>We want isolated components that we can reuse, styles that don’t conflict, and an easy authoring experience.</p>
 <p>At a high level, we know that a component needs to be three things:</p>
@@ -115,9 +70,15 @@ https://elyseholladay.github.io/static/slides-8-1fca811c95f3e6ef56f60a116c95cf96
 <li>— independent and isolated</li>
 </ol>
 <p>Our theory of components should be mostly applicable regardless of our tools. What works for one project may not work for another. But when you find things that don’t work, gaps in our knowledge, that doesn’t mean the whole theory is broken.</p>
-<p>We are experimenting with this theory of design systems every day as we work. What we learn will add to the theory, help us move forward, and create even better tools to improve our work. Searching for new solutions might even propel us forward so far we have as many new questions as answers. As we work together today and tomorrow and in the months and years to come, keep thinking beyond today’s understanding of the world, and on to tomorrow’s.</p>
+<p>We are experimenting with this theory of components every day as we work. What we learn will add to the theory, help us move forward, and create even better tools to improve our work. Searching for new solutions might even propel us forward so far we have as many new questions as answers. As we work together today and tomorrow and in the months and years to come, keep thinking beyond today’s understanding of the world, and on to tomorrow’s.</p>
 <h2>Notes</h2>
 <p><em>Did you take notes during this talk? Share them with me and I’ll share them here!</em></p>
+<ul>
+<li><a href="https://blog.prototypr.io/official-sketchnotes-from-clarity-conference-2017-f3ecae9ff105">Official Sketchnotes</a> by <a href="https://twitter.com/cindyjchang">Cindy Chang</a></li>
+<li><a href="http://sketchbookpages.tumblr.com/post/168232032192/sketchnotes-on-design-systems-28-29-november-2017">sketchnotes by Nádia</a></li>
+<li>tweets and pics from <a href="https://twitter.com/i/web/status/1053014431637131264">Christiano</a>, <a href="https://twitter.com/benclister/status/935648539337805824">Ben</a>, <a href="https://twitter.com/davatron5000/status/1083811882564231168">Uncle Dave</a></li>
+<li><a href="https://www.youtube.com/watch?v=1JWoKHp9Mis&list=PL4CMETp4gcvMWLqdQlz5gl2GerF2WH7RU">Recap Video</a></li>
+</ul>
 <h2>Resources</h2>
 <h3>Books</h3>
 <p>These books inspired the science story in my talk. <em>Black Holes Blues</em> especially is the best book I have read in a long time. I highly recommend it!</p>
@@ -146,12 +107,19 @@ https://elyseholladay.github.io/static/slides-8-1fca811c95f3e6ef56f60a116c95cf96
 </ul>
 <h2>Credits</h2>
 <p>Slide design, color palette, and illustrations by the talented and lovely <a href="http://ainsleywagoner.com/">Ainsley Wagoner</a>.</p>
-<p>The beautiful typeface is <a href="https://klim.co.nz/retail-fonts/tiempos-text/">Klim Foundry’s Tiempos Text and Headline</a>.</p></div></div></div></div></div><script>
+<p>The beautiful typeface is <a href="https://klim.co.nz/retail-fonts/tiempos-text/">Klim Foundry’s Tiempos Text and Headline</a>.</p></div></div></div></div><script>
   
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-33428524-1', 'auto');
-  </script></body></html>
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-33428524-1', 'auto', {});
+      
+      
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"theory-bc6","path":"/theory/"};window.dataPath="412/path---theory-bc-6-08f-hPiCSvPwAEmM4HYJbhASs3GJflk";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0118e6200d75c2f028fc.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-feb1446681e715ce887c.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.e980b206ec6d087ac599.css","/component---src-templates-blog-post-js-7c810189854656ca8529.js"],"component---src-pages-index-js":["/component---src-pages-index-js.a9cc91c18d8c9f9c6287.css","/component---src-pages-index-js-a5693d1a7a05f663d975.js"],"pages-manifest":["/pages-manifest-9411ae88718425872733.js"]};/*]]>*/</script><script src="/webpack-runtime-e8d5f408c8f22c874ed9.js" async=""></script><script src="/app-0118e6200d75c2f028fc.js" async=""></script><script src="/0-61bb5a8e2630fdbdf7c5.js" async=""></script><script src="/component---src-templates-blog-post-js-7c810189854656ca8529.js" async=""></script></body></html>
